@@ -1,6 +1,5 @@
 @import url(https://fonts.google.com/specimen/DM+Sans);
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,13 +9,13 @@
 
 /*Global Styles*/
 
-:root{
-    --bg-color: hsl(31, 66%, 93%);
-    --bg-yellow-bg: hsl(39, 100%, 71%);
-    --bg-white: hsl(0, 0%, 100%);
-    --color-black: hsl(0, 0%, 7%);
-    --color-purple-light: hsl(254, 88%, 90%);
-    --color-purple-strong: hsl(256, 67%, 59%);
+:root {
+  --bg-color: hsl(31, 66%, 93%);
+  --bg-yellow-bg: hsl(39, 100%, 71%);
+  --bg-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 7%);
+  --color-purple-light: hsl(254, 88%, 90%);
+  --color-purple-strong: hsl(256, 67%, 59%);
 }
 
 body {
@@ -39,7 +38,7 @@ body {
   grid-template: revert;
 }
 
-img{
+img {
   vertical-align: middle;
   width: 100%;
 }
@@ -53,83 +52,86 @@ img{
 }
 
 body > div.parent > div.div1 > h2 > span {
-    font-style: italic;
-    color: var(--color-purple-strong);
-    font-weight: 400;
+  font-style: italic;
+  color: var(--color-purple-strong);
+  font-weight: 400;
 }
 
 .div2 {
   grid-area: 3 / 1 / 5 / 2;
-  background-color: var(--bg-yellow-bg); 
+  background-color: var(--bg-yellow-bg);
   border-radius: 10px;
   align-content: center;
   padding: 10px;
-
 }
 .div3 {
   grid-area: 1 / 2 / 3 / 4;
-  background-color: var(--color-purple-strong); 
+  background-color: var(--color-purple-strong);
   border-radius: 10px;
   align-items: center;
   padding: 10px;
   vertical-align: middle;
 }
 
-
-
 .div4 {
   grid-area: 3 / 2 / 4 / 3;
-  background-color: pink; 
-  border-radius: 10px;  
+  background-color: pink;
+  border-radius: 10px;
   align-content: center;
   padding: 10px;
   image-orientation: inherit;
 }
 
-
 .div5 {
   grid-area: 3 / 3 / 4 / 4;
-  border-radius: 10px;  
+  border-radius: 10px;
   align-content: center;
   padding: 10px;
-  background-color: var(--bg-yellow-bg); 
-
+  background-color: var(--bg-yellow-bg);
 }
 
 .div6 {
   grid-area: 4 / 2 / 5 / 3;
-  border-radius: 10px;  
+  border-radius: 10px;
   align-content: center;
   padding: 10px;
-  background-color: var(--bg-white); 
-
+  background-color: var(--bg-white);
 }
 .div7 {
   grid-area: 1 / 4 / 4 / 5;
-  border-radius: 10px;  
+  border-radius: 10px;
   align-content: center;
   padding: 10px;
-  background-color: var(--color-purple-light); 
-
+  background-color: var(--color-purple-light);
 }
 .div8 {
   grid-area: 4 / 3 / 5 / 5;
-  border-radius: 10px;  
+  border-radius: 10px;
   align-content: center;
   padding: 10px;
   background-color: var(--color-purple-strong);
-  color: var(--bg-white) 
+  color: var(--bg-white);
 }
 
-.div8-content{
-    display: inline-flex;
-    flex-direction: row-reverse;
+.div8-content {
+  display: inline-flex;
+  flex-direction: row-reverse;
 }
-
 
 /*Responsive Design*/
-@media only screen and (max-width: 700px){
-    .parent{
-      grid-template-columns: 1fr;
-    }
+@media only screen and (max-width: 860px) {
+  .parent {
+    display: block;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8 {
+    margin-top: 10px;
+  }
 }
