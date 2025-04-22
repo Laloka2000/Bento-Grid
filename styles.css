@@ -19,7 +19,7 @@
 }
 
 body {
-  font-size: 18px;
+  font-size: 25px;
   background-color: var(--bg-white);
   font-weight: 500;
   font-family: DM Sans;
@@ -43,7 +43,7 @@ img {
   width: 100%;
 }
 
-.div1 {
+.content-scheduling {
   grid-area: 1 / 1 / 3 / 2;
   background-color: var(--bg-color);
   border-radius: 10px;
@@ -51,29 +51,40 @@ img {
   padding: 10px;
 }
 
-body > div.parent > div.div1 > h2 > span {
+body > div.parent > div.content-scheduling > h1 > span {
   font-style: italic;
   color: var(--color-purple-strong);
   font-weight: 400;
 }
 
-.div2 {
+.ai-content-writing {
   grid-area: 3 / 1 / 5 / 2;
   background-color: var(--bg-yellow-bg);
   border-radius: 10px;
   align-content: center;
   padding: 10px;
 }
-.div3 {
+
+.social-media {
   grid-area: 1 / 2 / 3 / 4;
   background-color: var(--color-purple-strong);
   border-radius: 10px;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   vertical-align: middle;
+  text-align: center;
+  color: var(--bg-white)
 }
 
-.div4 {
+body > div.parent > div.social-media > h1 > span{
+  color: var(--bg-yellow-bg)
+}
+
+.social-media > img{
+  width: 40%;
+}
+
+.multiple-accounts{
   grid-area: 3 / 2 / 4 / 3;
   background-color: pink;
   border-radius: 10px;
@@ -82,7 +93,7 @@ body > div.parent > div.div1 > h2 > span {
   image-orientation: inherit;
 }
 
-.div5 {
+.consistent-posting {
   grid-area: 3 / 3 / 4 / 4;
   border-radius: 10px;
   align-content: center;
@@ -90,21 +101,21 @@ body > div.parent > div.div1 > h2 > span {
   background-color: var(--bg-yellow-bg);
 }
 
-.div6 {
+.audience-growth {
   grid-area: 4 / 2 / 5 / 3;
   border-radius: 10px;
   align-content: center;
   padding: 10px;
   background-color: var(--bg-white);
 }
-.div7 {
+.schedule-to-social-media {
   grid-area: 1 / 4 / 4 / 5;
   border-radius: 10px;
   align-content: center;
   padding: 10px;
   background-color: var(--color-purple-light);
 }
-.div8 {
+.grow-followers {
   grid-area: 4 / 3 / 5 / 5;
   border-radius: 10px;
   align-content: center;
@@ -113,7 +124,7 @@ body > div.parent > div.div1 > h2 > span {
   color: var(--bg-white);
 }
 
-.div8-content {
+.grow-followers-content {
   display: inline-flex;
   flex-direction: row-reverse;
 }
@@ -124,14 +135,14 @@ body > div.parent > div.div1 > h2 > span {
     display: block;
   }
 
-  .div1,
-  .div2,
-  .div3,
-  .div4,
-  .div5,
-  .div6,
-  .div7,
-  .div8 {
+  .content-scheduling,
+  .ai-content-writing,
+  .social-media,
+  .multiple-accounts,
+  .consistent-posting,
+  .audience-growth,
+  .schedule-to-social-media,
+  .grow-followers {
     margin-top: 10px;
   }
 }
